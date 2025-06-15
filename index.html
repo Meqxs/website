@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meqxs | Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init('uG_KO7Ftj83ZfNHF8');
+    })();
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+<body>
+  <div class="overlay"></div>
+  <main>
+    <section class="hero">
+      <h1>Meqxs</h1>
+      <p>Developer, Modder, Linux Enthusiast</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn">See My Work</a>
+        <a href="#shop" class="btn btn-hero-shop">Shop</a>
+        <a href="#contact" class="btn btn-hero-contact">Contact Me</a>
+      </div>
+    </section>
+    <section class="about">
+      <h2>About Me</h2>
+      <p>I'm a passionate developer with experience in JavaScript, HTML, CSS, and Linux. I love building mods and tools for the community.</p>
+      <div class="skills">
+        <div class="skill"><span><i class="fab fa-js-square"></i> JavaScript</span><div class="bar js"></div></div>
+        <div class="skill"><span><i class="fab fa-html5"></i> HTML/CSS</span><div class="bar html"></div></div>
+        <div class="skill"><span><i class="fab fa-linux"></i> Linux</span><div class="bar linux"></div></div>
+      </div>
+    </section>
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <div id="project-list"></div>
+      <div class="project-card special">
+        <h3>PvPHud (Featured Mod)</h3>
+        <p>A lightweight Minecraft plugin for PvP with customizable HUD, FPS, ping, armor, and more.</p>
+        <a href="https://modrinth.com/mod/pvphud" target="_blank">View on Modrinth</a>
+      </div>
+    </section>
+    <section class="shop" id="shop">
+      <h2>Shop</h2>
+      <div class="shop-list">
+        <div class="shop-card">
+          <h3>MC Plugins</h3>
+          <p>Custom Minecraft plugins for your server. Fast delivery and support.</p>
+          <div class="shop-price">from $5</div>
+          <a href="#contact" class="btn shop-btn" data-product="MC Plugins">Contact</a>
+        </div>
+        <div class="shop-card">
+          <h3>MC Mods</h3>
+          <p>Unique Minecraft mods tailored to your needs. Enhance your gameplay!</p>
+          <div class="shop-price">from $10</div>
+          <a href="#contact" class="btn shop-btn" data-product="MC Mods">Contact</a>
+        </div>
+        <div class="shop-card">
+          <h3>Other</h3>
+          <p>Need something else? Contact me for custom development or services.</p>
+          <div class="shop-price">Custom</div>
+          <a href="#contact" class="btn shop-btn" data-product="Other">Contact</a>
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <h2>Contact</h2>
+      <form id="contact-form" autocomplete="off">
+        <div class="form-group">
+          <input type="text" id="name" name="name" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" name="email" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+          <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+        <div id="form-status"></div>
+      </form>
+      <p style="margin-top:2rem;">
+        <a href="https://github.com/meqxs" target="_blank">GitHub</a> |
+        <a href="mailto:your@email.com">Email</a>
+      </p>
+    </section>
+    <div id="view-counter-bubble">👁️ <span id="view-count">0</span> views</div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html> 
